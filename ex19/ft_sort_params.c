@@ -6,10 +6,9 @@
 /*   By: tmoska <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/11/17 12:08:16 by tmoska            #+#    #+#             */
-/*   Updated: 2016/11/17 12:31:41 by tmoska           ###   ########.fr       */
+/*   Updated: 2016/11/17 13:42:27 by tmoska           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-#include <stdio.h>
 
 void	ft_putchar(char c);
 
@@ -35,7 +34,7 @@ void	print_params(int argc, char **argv, char *f_name)
 
 int		ft_strcmp(char *s1, char *s2)
 {
-	while (*s1 == *s2 && *s1 ** s2)
+	while (*s1 == *s2 && *s1 && s2)
 	{
 		s1++;
 		s2++;
@@ -45,10 +44,10 @@ int		ft_strcmp(char *s1, char *s2)
 
 int		main(int argc, char **argv)
 {
-	int a;
-	int b;
-	char *f_name;
-	char *tmp;
+	int		a;
+	int		b;
+	char	*f_name;
+	char	*tmp;
 
 	f_name = argv[0];
 	a = 0;
@@ -57,7 +56,6 @@ int		main(int argc, char **argv)
 	{
 		while (b < (argc - a - 1))
 		{
-			printf("Comparing: %s | %s\n", argv[a], argv[a + 1]);
 			if (ft_strcmp(argv[b], argv[b + 1]) > 0)
 			{
 				tmp = argv[b];

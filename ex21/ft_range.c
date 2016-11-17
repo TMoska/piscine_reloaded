@@ -1,30 +1,29 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_print_params.c                                  :+:      :+:    :+:   */
+/*   ft_range.c                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: tmoska <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2016/11/17 12:09:14 by tmoska            #+#    #+#             */
-/*   Updated: 2016/11/17 13:40:58 by tmoska           ###   ########.fr       */
+/*   Created: 2016/11/17 12:36:38 by tmoska            #+#    #+#             */
+/*   Updated: 2016/11/17 12:42:10 by tmoska           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-void	ft_putchar(char c);
-
-void	ft_putstr(char *str)
+int		*ft_range(int min, int max)
 {
-	while (*str)
-		ft_putchar(*str++);
-	ft_putchar('\n');
-}
+	int		*str;
 
-int		main(int argv, char **argc)
-{
-	int	indx;
-
-	indx = 0;
-	while (argv-- > 1)
-		ft_putstr(argc[++indx]);
-	return (0);
+	if (min >= max)
+		return (0);
+	str = (int*)malloc(sizeof(*str) * (max - min + 1));
+	tmp = str;
+	while (max > min)
+	{
+		*str = min;
+		str++;
+		min++;
+	}
+	*str = 0;
+	return (tmp);
 }

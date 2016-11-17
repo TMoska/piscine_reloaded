@@ -1,30 +1,25 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_print_params.c                                  :+:      :+:    :+:   */
+/*   ft_count_if.c                                      :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: tmoska <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2016/11/17 12:09:14 by tmoska            #+#    #+#             */
-/*   Updated: 2016/11/17 13:40:58 by tmoska           ###   ########.fr       */
+/*   Created: 2016/11/17 13:15:16 by tmoska            #+#    #+#             */
+/*   Updated: 2016/11/17 13:44:07 by tmoska           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-void	ft_putchar(char c);
-
-void	ft_putstr(char *str)
+int		ft_count_if(char **tab, int (*f)(char*))
 {
-	while (*str)
-		ft_putchar(*str++);
-	ft_putchar('\n');
-}
+	int sum;
 
-int		main(int argv, char **argc)
-{
-	int	indx;
-
-	indx = 0;
-	while (argv-- > 1)
-		ft_putstr(argc[++indx]);
-	return (0);
+	sum = 0;
+	while (*tab)
+	{
+		if (f(*tab) == 1)
+			sum++;
+		tab++;
+	}
+	return (sum);
 }

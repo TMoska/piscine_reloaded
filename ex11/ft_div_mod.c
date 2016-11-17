@@ -6,12 +6,12 @@
 /*   By: tmoska <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/11/16 21:53:55 by tmoska            #+#    #+#             */
-/*   Updated: 2016/11/16 21:58:16 by tmoska           ###   ########.fr       */
+/*   Updated: 2016/11/17 13:39:47 by tmoska           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 void	ft_div_mod(int a, int b, int *div, int *mod)
 {
-	*div = a/b;
-	*mod = a%b;
+	*div = a / b;
+	*mod = a % b;
 }

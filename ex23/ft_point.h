@@ -1,30 +1,21 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_print_params.c                                  :+:      :+:    :+:   */
+/*   ft_point.h                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: tmoska <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2016/11/17 12:09:14 by tmoska            #+#    #+#             */
-/*   Updated: 2016/11/17 13:40:58 by tmoska           ###   ########.fr       */
+/*   Created: 2016/11/17 12:44:12 by tmoska            #+#    #+#             */
+/*   Updated: 2016/11/17 12:45:16 by tmoska           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-void	ft_putchar(char c);
+#ifndef FT_POINT_H
+# define FT_POINT_H
 
-void	ft_putstr(char *str)
+typedef struct		s_set_points
 {
-	while (*str)
-		ft_putchar(*str++);
-	ft_putchar('\n');
-}
-
-int		main(int argv, char **argc)
-{
-	int	indx;
-
-	indx = 0;
-	while (argv-- > 1)
-		ft_putstr(argc[++indx]);
-	return (0);
-}
+	int	x;
+	int	y;
+}					t_point;
+#endif
