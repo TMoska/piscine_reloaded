@@ -10,9 +10,12 @@
 /*                                                                            */
 /* ************************************************************************** */
 
+#include <stdlib.h>
+
 int		*ft_range(int min, int max)
 {
 	int		*str;
+	int		*tmp;
 
 	if (min >= max)
 		return (0);
