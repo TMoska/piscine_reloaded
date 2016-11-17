@@ -37,7 +37,7 @@ int		main(int argc, char **argv)
 	(void)argc;
 	if (argc < 2)
 	{
-		put_error("File name is missing.\n");
+		put_error("File name missing.\n");
 		return (0);
 	}
 	if (argc > 2)

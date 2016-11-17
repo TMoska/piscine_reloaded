@@ -18,7 +18,7 @@ void	ft_is_negative(int n)
 	{
 		ft_putchar('N');
 	}
-	else if (n > 0)
+	else
 	{
 		ft_putchar('P');
 	}
