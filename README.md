@@ -9,11 +9,14 @@ Studying at 42?
 ---
 
 You might be interested in checking my other repositories:
-- [libft](https://www.github.com/TMoska/libft)
-- [sastantua](https://www.github.com/TMoska/sastantua)
+- [sastantua](https://github.com/TMoska/sastantua)
 - [42_exams](https://github.com/TMoska/42_exams)
+- [libft](https://www.github.com/TMoska/libft)
+- [fillit](https://www.github.com/TMoska/fillit)
 - [get_next_line](https://github.com/TMoska/get_next_line)
-- [fillit](https://github.com/TMoska/fillit)
+- [ft_ls](https://github.com/TMoska/ft_ls)
+- [minishell](https://github.com/TMoska/minishell)
+
 
 Contributing
 ---
